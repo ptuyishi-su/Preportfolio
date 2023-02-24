@@ -1,0 +1,105 @@
+body{
+    width: 100;
+    height: 100vh;
+    background-image: url(backgroundpic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.logo{
+    cursor: pointer;
+}
+.navbar ul li {
+    cursor: pointer;
+    list-style-type: none; /* hide the dots */
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+}
+.navbar ul li:hover:before {
+    content: "•";
+    position: absolute;
+    bottom: -40px; /* move the dot 20px below the list item */
+    left: 50%; /* center the dot horizontally */
+    transform: translateX(-50%); /* push the dot to the left by 50% of its width to center it */
+    font-size: 50px; /* make the dot larger */
+    color: #fff; 
+    transition: all 5ms ease-in-out;
+}
+.middleheadline{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 200px 30px 30px -20px ;
+
+}
+.location{
+    background: black;
+    padding: 14px 40px 16px 60px;
+    border-radius: 0px 50px 50px 0px;
+    display: flex;
+    
+}
+.japan{
+    margin:1px;
+    width: 70px;  
+    margin: 0px -20px 0px 20px; 
+}
+
+.arrow{margin: 30px 30px 30px -6px;}
+.job { 
+    padding: 0px 20px 30px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+.job span{
+    padding-top: 30px;
+}
+
+.movingname {
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 180px;
+    padding: 0px 0px 0px 0px;
+    animation: loader 90s infinite; 
+    animation: banner-animation 10s ;
+    }
+    
+    @keyframes banner-animation {
+        0% {
+            transform: translateX(100%);
+        }
+        
+        
+    }
+    .japan {
+        animation: pulse 2s ease-in-out infinite;
+    }
+    
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
